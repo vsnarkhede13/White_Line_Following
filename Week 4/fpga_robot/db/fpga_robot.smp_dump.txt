@@ -1,0 +1,14 @@
+
+State Machine - |fpga_robot|display_values:lcd_module|mLCD_ST
+Name mLCD_ST.011 mLCD_ST.010 mLCD_ST.001 mLCD_ST.000 
+mLCD_ST.000 0 0 0 0 
+mLCD_ST.001 0 0 1 1 
+mLCD_ST.010 0 1 0 1 
+mLCD_ST.011 1 0 0 1 
+
+State Machine - |fpga_robot|display_values:lcd_module|LCD_Controller:u0|ST
+Name ST.11 ST.10 ST.01 ST.00 
+ST.00 0 0 0 0 
+ST.01 0 0 1 1 
+ST.10 0 1 0 1 
+ST.11 1 0 0 1 

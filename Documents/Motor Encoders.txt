@@ -1,0 +1,14 @@
+Clockwise Rotation:
+	Positive edge of A -> B = Low
+	Negative edge of A -> B = High
+	
+	Positive edge of B -> A = High
+	Negative edge og B -> A = Low
+
+Anti-Clockwise Rotation:
+	Positive edge of A -> B = High
+	Negative edge of A -> B = Low
+	
+	Positive edge of B -> A = Low
+	Positive edge of B -> A = High
+ 

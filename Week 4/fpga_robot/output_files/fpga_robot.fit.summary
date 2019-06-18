@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 18 15:58:06 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : fpga_robot
+Top-level Entity Name : fpga_robot
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,964 / 22,320 ( 9 % )
+    Total combinational functions : 1,945 / 22,320 ( 9 % )
+    Dedicated logic registers : 173 / 22,320 ( < 1 % )
+Total registers : 173
+Total pins : 39 / 154 ( 25 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

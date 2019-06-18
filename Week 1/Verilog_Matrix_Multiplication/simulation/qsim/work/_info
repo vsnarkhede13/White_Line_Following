@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/JASUS/Documents/Matrix_mul/simulation/qsim
+vhard_block
+Z0 !s110 1559107220
+!i10b 1
+!s100 Q`;k8c7DUC_ZW9@^MWYd_3
+I<QZ6e_hIdia=gjKCL1=T03
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/JASUS/Documents/Matrix_mul_3by3_binary_var/simulation/qsim
+Z3 w1559107219
+Z4 8Matrix_mul.vo
+Z5 FMatrix_mul.vo
+L0 1620
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1559107220.000000
+Z8 !s107 Matrix_mul.vo|
+Z9 !s90 -work|work|Matrix_mul.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmul
+R0
+!i10b 1
+!s100 g^j:zD>WWNhl9BZkB>`Al2
+I[8^P7PRhRdg?YG86CaS911
+R1
+R2
+R3
+R4
+R5
+Z12 L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vmul_vlg_vec_tst
+R0
+!i10b 1
+!s100 6_f5`S^mzOnKMF<FnJ=DO3
+I`de8Y25a]eDB?94izfaff1
+R1
+R2
+w1559107218
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z13 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vname
+Z14 !s110 1559105892
+!i10b 1
+!s100 4lg`=9G@GMDQYAYIWm[Mh3
+IE[Y7FRNDiaE=QQJV>JU:g3
+R1
+R2
+w1559105891
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+Z15 !s108 1559105892.000000
+R8
+R9
+!i113 1
+R10
+R11
+vname_vlg_vec_tst
+R14
+!i10b 1
+!s100 0_3MKO=a`202c7^k`KW6>2
+I>hVhe[^F=>H@`GUL2JQkA3
+R1
+R2
+w1559105889
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+R15
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

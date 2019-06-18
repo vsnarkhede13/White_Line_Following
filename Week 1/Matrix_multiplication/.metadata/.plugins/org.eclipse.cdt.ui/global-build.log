@@ -1,0 +1,172 @@
+14:30:43 **** Clean-only build of configuration Nios II for project matrix_multiplication ****
+make clean 
+[matrix_multiplication clean complete]
+14:30:53 **** Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+Info: Compiling mat_mul.c to obj/default/mat_mul.o
+nios2-elf-gcc -xc -MP -MMD -c -I../matrix_multiplication_bsp//HAL/inc -I../matrix_multiplication_bsp/ -I../matrix_multiplication_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/mat_mul.o mat_mul.c
+Info: Linking matrix_multiplication.elf
+nios2-elf-g++  -T'../matrix_multiplication_bsp//linker.x' -msys-crt0='../matrix_multiplication_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../matrix_multiplication_bsp/  -msmallc  -Wl,-Map=matrix_multiplication.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o matrix_multiplication.elf obj/default/mat_mul.o -lm -msys-lib=m
+nios2-elf-insert matrix_multiplication.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name matrix_mul --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication" --jdi ../..//output_files/matrix_mul.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication/software/matrix_multiplication_bsp/../../matrix_mul.sopcinfo
+Info: (matrix_multiplication.elf) 1300 Bytes program size (code + initialized data).
+Info:                             30 KBytes free for stack + heap.
+Info: Creating matrix_multiplication.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source matrix_multiplication.elf >matrix_multiplication.objdump
+[matrix_multiplication build complete]
+14:30:57 **** Build of configuration Nios II for project matrix_multiplication_bsp ****
+make all 
+[BSP build complete]
+14:31:18 **** Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:31:20 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:32:26 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+Info: Compiling mat_mul.c to obj/default/mat_mul.o
+nios2-elf-gcc -xc -MP -MMD -c -I../matrix_multiplication_bsp//HAL/inc -I../matrix_multiplication_bsp/ -I../matrix_multiplication_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/mat_mul.o mat_mul.c
+Info: Linking matrix_multiplication.elf
+nios2-elf-g++  -T'../matrix_multiplication_bsp//linker.x' -msys-crt0='../matrix_multiplication_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../matrix_multiplication_bsp/  -msmallc  -Wl,-Map=matrix_multiplication.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o matrix_multiplication.elf obj/default/mat_mul.o -lm -msys-lib=m
+nios2-elf-insert matrix_multiplication.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name matrix_mul --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication" --jdi ../..//output_files/matrix_mul.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication/software/matrix_multiplication_bsp/../../matrix_mul.sopcinfo
+Info: (matrix_multiplication.elf) 1260 Bytes program size (code + initialized data).
+Info:                             30 KBytes free for stack + heap.
+Info: Creating matrix_multiplication.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source matrix_multiplication.elf >matrix_multiplication.objdump
+[matrix_multiplication build complete]
+14:32:29 **** Incremental Build of configuration Nios II for project matrix_multiplication_bsp ****
+make all 
+[BSP build complete]
+14:32:31 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:35:00 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+Info: Compiling mat_mul.c to obj/default/mat_mul.o
+nios2-elf-gcc -xc -MP -MMD -c -I../matrix_multiplication_bsp//HAL/inc -I../matrix_multiplication_bsp/ -I../matrix_multiplication_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/mat_mul.o mat_mul.c
+mat_mul.c: In function 'main':
+mat_mul.c:47:21: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+          alt_printf(mat_a[i][j]);
+                     ^
+In file included from mat_mul.c:14:0:
+../matrix_multiplication_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+mat_mul.c:58:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(mat_a[i][j]);
+               ^
+In file included from mat_mul.c:14:0:
+../matrix_multiplication_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+mat_mul.c:76:21: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+          alt_printf(mat_c[i][j]);
+                     ^
+In file included from mat_mul.c:14:0:
+../matrix_multiplication_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+mat_mul.c:81:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from mat_mul.c:14:0:
+../matrix_multiplication_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking matrix_multiplication.elf
+nios2-elf-g++  -T'../matrix_multiplication_bsp//linker.x' -msys-crt0='../matrix_multiplication_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../matrix_multiplication_bsp/  -msmallc  -Wl,-Map=matrix_multiplication.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o matrix_multiplication.elf obj/default/mat_mul.o -lm -msys-lib=m
+nios2-elf-insert matrix_multiplication.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name matrix_mul --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication" --jdi ../..//output_files/matrix_mul.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication/software/matrix_multiplication_bsp/../../matrix_mul.sopcinfo
+Info: (matrix_multiplication.elf) 1628 Bytes program size (code + initialized data).
+Info:                             30 KBytes free for stack + heap.
+Info: Creating matrix_multiplication.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source matrix_multiplication.elf >matrix_multiplication.objdump
+[matrix_multiplication build complete]
+14:35:03 **** Incremental Build of configuration Nios II for project matrix_multiplication_bsp ****
+make all 
+[BSP build complete]
+14:35:07 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:35:33 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:37:34 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+Info: Compiling mat_mul.c to obj/default/mat_mul.o
+nios2-elf-gcc -xc -MP -MMD -c -I../matrix_multiplication_bsp//HAL/inc -I../matrix_multiplication_bsp/ -I../matrix_multiplication_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/mat_mul.o mat_mul.c
+mat_mul.c: In function 'main':
+mat_mul.c:76:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from mat_mul.c:14:0:
+../matrix_multiplication_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking matrix_multiplication.elf
+nios2-elf-g++  -T'../matrix_multiplication_bsp//linker.x' -msys-crt0='../matrix_multiplication_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../matrix_multiplication_bsp/  -msmallc  -Wl,-Map=matrix_multiplication.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o matrix_multiplication.elf obj/default/mat_mul.o -lm -msys-lib=m
+nios2-elf-insert matrix_multiplication.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name matrix_mul --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication" --jdi ../..//output_files/matrix_mul.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication/software/matrix_multiplication_bsp/../../matrix_mul.sopcinfo
+Info: (matrix_multiplication.elf) 1568 Bytes program size (code + initialized data).
+Info:                             30 KBytes free for stack + heap.
+Info: Creating matrix_multiplication.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source matrix_multiplication.elf >matrix_multiplication.objdump
+[matrix_multiplication build complete]
+14:37:38 **** Incremental Build of configuration Nios II for project matrix_multiplication_bsp ****
+make all 
+[BSP build complete]
+14:37:43 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]
+14:39:07 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+Info: Compiling mat_mul.c to obj/default/mat_mul.o
+nios2-elf-gcc -xc -MP -MMD -c -I../matrix_multiplication_bsp//HAL/inc -I../matrix_multiplication_bsp/ -I../matrix_multiplication_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/mat_mul.o mat_mul.c
+Info: Linking matrix_multiplication.elf
+nios2-elf-g++  -T'../matrix_multiplication_bsp//linker.x' -msys-crt0='../matrix_multiplication_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../matrix_multiplication_bsp/  -msmallc  -Wl,-Map=matrix_multiplication.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o matrix_multiplication.elf obj/default/mat_mul.o -lm -msys-lib=m
+nios2-elf-insert matrix_multiplication.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name matrix_mul --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication" --jdi ../..//output_files/matrix_mul.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Matrix_multiplication/software/matrix_multiplication_bsp/../../matrix_mul.sopcinfo
+Info: (matrix_multiplication.elf) 700 Bytes program size (code + initialized data).
+Info:                             31 KBytes free for stack + heap.
+Info: Creating matrix_multiplication.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source matrix_multiplication.elf >matrix_multiplication.objdump
+[matrix_multiplication build complete]
+14:39:10 **** Incremental Build of configuration Nios II for project matrix_multiplication_bsp ****
+make all 
+[BSP build complete]
+14:39:19 **** Incremental Build of configuration Nios II for project matrix_multiplication ****
+make all 
+Info: Building ../matrix_multiplication_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../matrix_multiplication_bsp/
+[BSP build complete]
+[matrix_multiplication build complete]

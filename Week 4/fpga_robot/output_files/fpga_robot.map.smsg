@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at movements.v(128): always construct contains both blocking and non-blocking assignments File: D:/Tech/e-YSIP/fpga-robot-2019/Week 4/fpga_robot/movements.v Line: 128

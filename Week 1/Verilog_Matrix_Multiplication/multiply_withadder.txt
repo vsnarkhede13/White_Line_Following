@@ -1,0 +1,48 @@
+`timescale 1ns/1ns
+module name(clk,a,b,c); 
+	input clk;
+	input [8:0]a,b; 
+	output reg [17:0]c; 
+	reg [1:0]sum; 
+	reg [2:0]ra[2:0]; 
+	reg [2:0]rb[2:0]; 
+	reg [2:0]rc[2:0]; 
+	integer i1,i2,i3,j1,j2,j3,k,m ; 
+	always@(*) begin
+	m = 1'b0;
+	k = 1'b0;
+	for(i1=0;i1<3;i1=i1+1) 
+	begin 
+		for(j1=0;j1<3;j1=j1+1) 
+		begin 
+			ra[i1][j1] = 1'b0;
+			rb[i1][j1] = 1'b0;
+			ra[i1][j1]=a[k]; 
+			rb[i1][j1]=b[k];
+				k = k+1;
+			//c[m] = ra[i1][j1];
+			m = m+1;
+		end 
+	end 
+	end
+	always@(posedge clk)
+	begin
+	for(i1=0;i1<3;i1=i1+1)
+	begin
+		for(j1=0;j1<3;j1=j1+1)
+		begin
+		sum = 2'b00;
+		m = 1'b0;
+			for(k=0;k<3;k=k+1)
+			begin
+				m = (ra[i1][k] & ra[j1][k]);
+				sum[0] = sum[0] ^ m;
+				sum[1] = sum[0] & m;
+			end
+			$display("sum:%b",sum);
+			c[1:0] = sum;
+			c = {c[15:0],c[17:16]};
+		end
+	end
+	end
+ endmodule

@@ -1,0 +1,6 @@
+	component matrix_mul is
+		port (
+			clk_clk : in std_logic := 'X'  -- clk
+		);
+	end component matrix_mul;
+

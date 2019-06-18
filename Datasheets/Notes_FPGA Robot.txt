@@ -1,0 +1,44 @@
+DE0-Nano Board - Altera Cyclone IV EP4CE22F17C6N FPGA
+
+Features
+>> 22,320 Logic Elements
+>> 32 MB SDRAM
+>> 2Kb I2C EEPROM
+>> 64 Mb Serial config. memory device
+
+>> 8 channel 12-bit ADC (ADC128S022), 50 Ksps to 200  Ksps
+>> 13 bit, 3-axis Accelerometer (ADXL345)
+
+>> 2 pushbuttons (debounced - Schmitt Trigger)
+   KEY0 - J15
+   KEY1 - E1
+
+>> 8 user LEDs
+   LED0 - A15
+   LED1 - A13
+   LED2 - B13
+   LED3 - A11
+   LED4 - D1
+   LED5 - F3
+   LED6 - B1
+   LED7 - L3
+>> ADC
+   CS - A10
+   SI - B10
+   SO - A9
+   SCLK - B14
+
+>> 4 DIP-switches
+   DIP Switch 0 - M1
+   DIP Switch 1 - T8
+   DIP Switch 2 - B9
+   DIP Switch 3 - M15
+
+>> 50 MHz Clock
+   Clock - R8
+>> 72 I/O Pins on Expansion header
+
+
+Altera USB Blaster driver software.
+JTAG Programming
+Quartus II

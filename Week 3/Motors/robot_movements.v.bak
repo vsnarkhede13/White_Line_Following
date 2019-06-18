@@ -1,0 +1,152 @@
+/* e-Yantra Summer Internship Programme
+ * Project Title: Robot Design using FPGA
+ * Members: Karthik K Bhat, Vishal Narkhede
+ * Mentors: Simranjit Singh, Lohit Penubaku
+ *
+ * Author: Karthik K Bhat
+ * File name: robot_movements.v
+ * Modules: robot_movements, motor_drive
+ * Target Device: DE0-Nano Board (EP4CE22F17C6)
+ */
+ 
+`timescale 1ns/1ps
+
+module robot_movements(
+						input clock_in, reset,
+						input [1:0] robot_direction,
+						//input motor_left_a, motor_left_b,
+						//input motor_right_a, motor_right_b,
+						
+						output motor_left_enable, motor_right_enable, 
+						output reg motor_left_forward, motor_left_backward,
+						output reg motor_right_forward, motor_right_backward
+					  );
+	
+	/* Robot Directions:
+	 *	0 -> Forward
+	 * 1 -> Backward
+	 * 2 -> Left
+	 * 3 -> Right
+	 */
+				
+	reg [16:0] clock_division_counter;
+	reg [7:0] left_motor_duty_cycle, right_motor_duty_cycle;
+	
+	wire motor_left_enable_pwm, motor_right_enable_pwm;
+	
+	assign motor_left_enable = motor_left_enable_pwm;
+	assign motor_right_enable = motor_right_enable_pwm;
+	
+	//assign left_motor_duty_cycle = 255;
+	//assign right_motor_duty_cycle = 255;
+	
+	// ------------------------ Clock Division Code ------------------------ //
+	/* 
+	 * Clock division for 480 Hz 															
+	 */
+	 
+	always @ (posedge clock_in or negedge reset)
+	begin
+		if (~ reset)
+			clock_division_counter <= 17'b0;
+		else
+			clock_division_counter <= clock_division_counter + 1'b1;
+	end
+	
+	// --------------------------------------------------------------------- //
+	
+	always @ (robot_direction or negedge reset)
+	begin
+		if (~reset)
+		begin
+			motor_left_forward <= 1'b0;
+			motor_left_backward <= 1'b0;
+			
+			motor_right_forward <= 1'b0;
+			motor_right_backward <= 1'b0;
+		end
+		
+		case (robot_direction)
+			2'b00:												// Forward Condition
+			begin
+				motor_left_forward <= 1'b1;
+				motor_left_backward <= 1'b0;
+				
+				motor_right_forward <= 1'b1;
+				motor_right_backward <= 1'b0;
+			end		
+			
+			2'b01:												// Backward Condition
+			begin
+				motor_left_forward <= 1'b0;
+				motor_left_backward <= 1'b1;
+				
+				motor_right_forward <= 1'b0;
+				motor_right_backward <= 1'b1;
+			end
+			
+			2'b10:												// Left Condition
+			begin
+				motor_left_forward <= 1'b0;
+				motor_left_backward <= 1'b1;
+				
+				motor_right_forward <= 1'b1;
+				motor_right_backward <= 1'b0;
+			end
+			
+			2'b11:												// Right Condition
+			begin
+				motor_left_forward <= 1'b1;
+				motor_left_backward <= 1'b0;
+				
+				motor_right_forward <= 1'b0;
+				motor_right_backward <= 1'b1;
+			end
+		endcase
+	end
+			
+	
+	pwm_output left_motor_pwm(clock_division_counter[16], reset, robot_direction, 255, motor_left_enable_pwm);
+	pwm_output right_motor_pwm(clock_division_counter[16], reset, robot_direction, 255, motor_right_enable_pwm);
+	
+	
+					  
+endmodule
+
+module pwm_output(
+						input pwm_clock, reset,
+						input [1:0] direction,
+						input [7:0] duty_cycle,
+						
+						output reg motor_enable_pin
+					  );
+
+	reg [6:0] pwm_counter;
+	
+	// --------------------------- PWM Generator --------------------------- //
+	
+	always @ (posedge pwm_clock or negedge reset)
+	begin
+		if (~ reset)
+		begin 
+			pwm_counter <= 7'b0;
+			motor_enable <= 1'b0;
+		end
+		
+		else if (pwm_counter < 7'd100)
+		begin
+			pwm_counter <= pwm_counter + 1;
+			motor_enable <= 1'b1;
+		end
+			
+		else
+		begin
+			pwm_counter <= 7'b0;
+			motor_enable <= 1'b0;
+		end
+			
+	end
+	
+	// --------------------------------------------------------------------- //
+	
+endmodule

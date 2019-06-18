@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 29 11:02:14 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : matrix_mul
+Top-level Entity Name : matrix_mul
+Family : Cyclone IV E
+Total logic elements : 1,592
+    Total combinational functions : 1,417
+    Dedicated logic registers : 835
+Total registers : 835
+Total pins : 1
+Total virtual pins : 0
+Total memory bits : 272,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

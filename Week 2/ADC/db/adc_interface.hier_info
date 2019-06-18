@@ -1,0 +1,41 @@
+|adc_interface
+clock_in => clock_division_counter[0].CLK
+clock_in => clock_division_counter[1].CLK
+clock_in => clock_division_counter[2].CLK
+clock_in => clock_division_counter[3].CLK
+clock_in => clock_division_counter[4].CLK
+enable_conversion => adc_chip_enable~reg0.CLK
+reset => adc_chip_enable~reg0.PRESET
+channel_select[0] => Mux0.IN15
+channel_select[1] => Mux0.IN14
+channel_select[2] => Mux0.IN13
+miso => digital_data_storage[0].DATAIN
+adc_chip_enable << adc_chip_enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+adc_serial_clk << clock_division_counter[4].DB_MAX_OUTPUT_PORT_TYPE
+mosi << mosi~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[0] << led_output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[1] << led_output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[2] << led_output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[3] << led_output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[4] << led_output[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[5] << led_output[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[6] << led_output[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[7] << led_output[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[8] << led_output[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[9] << led_output[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[10] << led_output[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_output[11] << led_output[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[0] << led_output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[1] << led_output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[2] << led_output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[3] << led_output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[4] << led_output[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[5] << led_output[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[6] << led_output[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[7] << led_output[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[8] << led_output[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[9] << led_output[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[10] << led_output[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output_de2[11] << led_output[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

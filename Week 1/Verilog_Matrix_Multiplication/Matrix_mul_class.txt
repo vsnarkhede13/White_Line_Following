@@ -1,0 +1,81 @@
+// Code your testbench here
+// or browse Examples
+
+/// This matrix multiplication work when two matrix of orders same i.e N*N
+
+class mul;
+  parameter N = 3;
+  
+  int a[N][N] = '{'{2,3,3},'{2,2,4} ,'{2,5,4} };
+  
+  int b[N][N] = '{'{2,2,3},'{1,2,1},'{8,2,6}};
+  
+  int c[N][N]; 
+  reg ra [N][N];
+  reg rb [N][N];
+  reg rc [N][N];
+  
+ integer  i,j,i1,i2,i3,j1,j2,j3,k;
+  int sum = 0;
+  
+  task m1();
+   
+    $write("matrix a is:\n");
+    for(i1=0;i1<N;i1=i1+1)begin
+      for(j1=0;j1<N;j1=j1+1)begin
+        ra[i1][j1]=a;
+        $write("a=%d",a[i1][j1]);
+        $write("  ");
+      end
+      $write("\n");
+    end
+/////////////////////////////////////////////    
+    $write("Matrix b is:\n");
+    for(i=0;i<N;i=i+1)begin
+      for(j=0;j<N;j=j+1)begin
+        rb[i][j]=b;
+        $write("b=%d",b[i][j]);
+        $write("  ");
+      end
+      $write("\n");
+    end  
+    
+////////////////////////////////////////    
+    for(i2=0;i2<=N;i2=i2+1)begin
+      for(j2=0;j2<=N;j2=j2+1)begin
+       
+        for(k=0;k<=N;k=k+1)begin
+          
+          sum=sum+a[i2][k]*b[k][j2];
+          
+           end
+        
+        c[i2][j2]=sum[4:0];
+       // $write("rc_rc=%d",c[i2][j2]);
+        sum =0;
+      end
+    end
+ ///////////////////////////////////////   
+  
+    $write("Multipling of a and b Matrix is:\n ");
+    for(i2=0;i2<N;i2=i2+1)begin
+      for(j2=0;j2<N;j2=j2+1)begin
+        rc[i2][j2]=c;
+        $write("c=%d;",c[i2][j2]);
+        $write("  ");
+      end
+      $write("\n");
+    end
+  endtask  
+endclass
+
+
+
+program main;
+  initial begin
+ mul m;
+ m = new();
+  m.m1(); 
+  end
+  initial $dumpvars(0, main);
+endprogram

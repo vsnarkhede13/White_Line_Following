@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ws2lcd.v(22): object "LCD_DATA" differs only in case from object "lcd_data" in the same scope File: C:/Users/JASUS/Music/eYSIP/Github/fpga-robot-2019/Week 3/White_line_sensor/ws2lcd.v Line: 22
+Warning (10268): Verilog HDL information at LCD_ADC.sv(73): always construct contains both blocking and non-blocking assignments File: C:/Users/JASUS/Music/eYSIP/Github/fpga-robot-2019/Week 3/White_line_sensor/LCD_ADC.sv Line: 73

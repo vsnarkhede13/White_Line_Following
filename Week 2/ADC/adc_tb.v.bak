@@ -1,0 +1,45 @@
+'timescale 1ns/1ps
+
+module adc_test_bench();
+
+reg clock, enable, reset, [2:0] channel, miso;
+wire adc_enable, adc_clk, digital_data;
+
+dut adc_interface(clock, enable, reset, channel, miso,
+						adc_enable, adc_clk,	mosi, digital_data);
+
+initial begin
+	clock = 0;
+	enable = 0;
+	reset = 0;
+	channel = 3'b000;
+	miso = 0;
+end
+
+always #5 clock = ~ clock;
+
+initial begin
+	#300
+		enable = 1; 
+		reset = 1;	
+	#320					// 1
+		
+	#320					// 2 
+	#320					// 3
+	#320					// 4  
+	#320					// 5 
+	#320					// 6
+	#320					// 7
+	#320					// 8
+	#320					// 9
+	#320					// 10
+	#320					// 11
+	#320					// 12
+	#320					// 13
+	#320					// 14
+	#320					// 15
+	#320					// 16
+	#320					// 17
+end
+
+endmodule 

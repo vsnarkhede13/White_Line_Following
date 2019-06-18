@@ -1,0 +1,4 @@
+1. De0-Nano Datasheet by Terasic Technologies Inc.
+2. Developing Software for the Nios® II Processor by Intel Corporation
+3. Nios II Software Tutorial
+4. Video: https://www.youtube.com/watch?v=DBkza5-SlqQ

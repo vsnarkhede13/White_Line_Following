@@ -1,0 +1,294 @@
+$comment
+	File created using the following command:
+		vcd file Matrix_mul.msim.vcd -direction
+$end
+$date
+	Wed May 29 10:50:21 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mul_vlg_vec_tst $end
+$var reg 9 ! a [8:0] $end
+$var reg 9 " b [8:0] $end
+$var reg 1 # clk $end
+$var wire 1 $ c [17] $end
+$var wire 1 % c [16] $end
+$var wire 1 & c [15] $end
+$var wire 1 ' c [14] $end
+$var wire 1 ( c [13] $end
+$var wire 1 ) c [12] $end
+$var wire 1 * c [11] $end
+$var wire 1 + c [10] $end
+$var wire 1 , c [9] $end
+$var wire 1 - c [8] $end
+$var wire 1 . c [7] $end
+$var wire 1 / c [6] $end
+$var wire 1 0 c [5] $end
+$var wire 1 1 c [4] $end
+$var wire 1 2 c [3] $end
+$var wire 1 3 c [2] $end
+$var wire 1 4 c [1] $end
+$var wire 1 5 c [0] $end
+
+$scope module i1 $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 8 unknown $end
+$var tri1 1 9 devclrn $end
+$var tri1 1 : devpor $end
+$var tri1 1 ; devoe $end
+$var wire 1 < c[0]~output_o $end
+$var wire 1 = c[1]~output_o $end
+$var wire 1 > c[2]~output_o $end
+$var wire 1 ? c[3]~output_o $end
+$var wire 1 @ c[4]~output_o $end
+$var wire 1 A c[5]~output_o $end
+$var wire 1 B c[6]~output_o $end
+$var wire 1 C c[7]~output_o $end
+$var wire 1 D c[8]~output_o $end
+$var wire 1 E c[9]~output_o $end
+$var wire 1 F c[10]~output_o $end
+$var wire 1 G c[11]~output_o $end
+$var wire 1 H c[12]~output_o $end
+$var wire 1 I c[13]~output_o $end
+$var wire 1 J c[14]~output_o $end
+$var wire 1 K c[15]~output_o $end
+$var wire 1 L c[16]~output_o $end
+$var wire 1 M c[17]~output_o $end
+$var wire 1 N clk~input_o $end
+$var wire 1 O clk~inputclkctrl_outclk $end
+$var wire 1 P a[1]~input_o $end
+$var wire 1 Q b[3]~input_o $end
+$var wire 1 R a[0]~input_o $end
+$var wire 1 S b[0]~input_o $end
+$var wire 1 T Mult0~0_combout $end
+$var wire 1 U a[2]~input_o $end
+$var wire 1 V b[6]~input_o $end
+$var wire 1 W Mult2~0_combout $end
+$var wire 1 X Add1~0_combout $end
+$var wire 1 Y c[0]~reg0_q $end
+$var wire 1 Z Add1~1_combout $end
+$var wire 1 [ c[1]~reg0_q $end
+$var wire 1 \ b[7]~input_o $end
+$var wire 1 ] Mult5~0_combout $end
+$var wire 1 ^ b[1]~input_o $end
+$var wire 1 _ Mult3~0_combout $end
+$var wire 1 ` b[4]~input_o $end
+$var wire 1 a Add3~0_combout $end
+$var wire 1 b c[2]~reg0_q $end
+$var wire 1 c Add3~1_combout $end
+$var wire 1 d c[3]~reg0_q $end
+$var wire 1 e b[8]~input_o $end
+$var wire 1 f Mult8~0_combout $end
+$var wire 1 g b[5]~input_o $end
+$var wire 1 h b[2]~input_o $end
+$var wire 1 i Mult6~0_combout $end
+$var wire 1 j Add5~0_combout $end
+$var wire 1 k c[4]~reg0_q $end
+$var wire 1 l Add5~1_combout $end
+$var wire 1 m c[5]~reg0_q $end
+$var wire 1 n a[5]~input_o $end
+$var wire 1 o Mult11~0_combout $end
+$var wire 1 p a[3]~input_o $end
+$var wire 1 q Mult9~0_combout $end
+$var wire 1 r a[4]~input_o $end
+$var wire 1 s Add7~0_combout $end
+$var wire 1 t c[6]~reg0_q $end
+$var wire 1 u Add7~1_combout $end
+$var wire 1 v c[7]~reg0_q $end
+$var wire 1 w Mult12~0_combout $end
+$var wire 1 x Mult14~0_combout $end
+$var wire 1 y Add9~0_combout $end
+$var wire 1 z c[8]~reg0_q $end
+$var wire 1 { Add9~1_combout $end
+$var wire 1 | c[9]~reg0_q $end
+$var wire 1 } Mult15~0_combout $end
+$var wire 1 ~ Mult17~0_combout $end
+$var wire 1 !! Add11~0_combout $end
+$var wire 1 "! c[10]~reg0_q $end
+$var wire 1 #! Add11~1_combout $end
+$var wire 1 $! c[11]~reg0_q $end
+$var wire 1 %! a[8]~input_o $end
+$var wire 1 &! Mult20~0_combout $end
+$var wire 1 '! a[7]~input_o $end
+$var wire 1 (! a[6]~input_o $end
+$var wire 1 )! Mult18~0_combout $end
+$var wire 1 *! Add13~0_combout $end
+$var wire 1 +! c[12]~reg0_q $end
+$var wire 1 ,! Add13~1_combout $end
+$var wire 1 -! c[13]~reg0_q $end
+$var wire 1 .! Mult21~0_combout $end
+$var wire 1 /! Mult23~0_combout $end
+$var wire 1 0! Add15~0_combout $end
+$var wire 1 1! c[14]~reg0_q $end
+$var wire 1 2! Add15~1_combout $end
+$var wire 1 3! c[15]~reg0_q $end
+$var wire 1 4! Mult24~0_combout $end
+$var wire 1 5! Mult26~0_combout $end
+$var wire 1 6! Add17~0_combout $end
+$var wire 1 7! c[16]~reg0_q $end
+$var wire 1 8! Add17~1_combout $end
+$var wire 1 9! c[17]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101010111 !
+b110011110 "
+0#
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+06
+17
+x8
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+1P
+1Q
+1R
+0S
+0T
+1U
+0V
+0W
+1X
+0Y
+0Z
+0[
+1\
+1]
+1^
+1_
+1`
+1a
+0b
+1c
+0d
+1e
+1f
+0g
+1h
+1i
+0j
+0k
+1l
+0m
+0n
+0o
+0p
+0q
+1r
+1s
+0t
+0u
+0v
+0w
+0x
+1y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+1%!
+0&!
+0'!
+1(!
+0)!
+0*!
+0+!
+0,!
+0-!
+1.!
+1/!
+00!
+01!
+12!
+03!
+14!
+15!
+06!
+07!
+18!
+09!
+$end
+#40000
+1#
+1N
+1O
+19!
+13!
+1z
+1t
+1m
+1d
+1b
+1Y
+1<
+1>
+1?
+1A
+1B
+1D
+1K
+1M
+1$
+1&
+1-
+1/
+10
+12
+13
+15
+#150000
+0#
+0N
+0O
+#1000000

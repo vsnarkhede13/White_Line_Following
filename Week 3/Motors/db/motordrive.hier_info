@@ -1,0 +1,13 @@
+|robot_movements
+clock_in => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+robot_direction[0] => Decoder0.IN1
+robot_direction[1] => Decoder0.IN0
+motor_left_enable <= <GND>
+motor_right_enable <= <GND>
+motor_left_forward <= motor_left_forward.DB_MAX_OUTPUT_PORT_TYPE
+motor_left_backward <= motor_left_forward.DB_MAX_OUTPUT_PORT_TYPE
+motor_right_forward <= motor_right_forward.DB_MAX_OUTPUT_PORT_TYPE
+motor_right_backward <= motor_right_forward.DB_MAX_OUTPUT_PORT_TYPE
+
+

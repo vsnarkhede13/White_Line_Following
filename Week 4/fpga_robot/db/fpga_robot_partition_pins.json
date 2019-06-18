@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "adc_sck",
+					"strict" : false
+				},
+				{
+					"name" : "adc_ce",
+					"strict" : false
+				},
+				{
+					"name" : "adc_mosi",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_rs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_e",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "motor_left_enable",
+					"strict" : false
+				},
+				{
+					"name" : "motor_right_enable",
+					"strict" : false
+				},
+				{
+					"name" : "motor_left_forward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_left_backward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_right_forward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_right_backward",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[7]",
+					"strict" : false
+				},
+				{
+					"name" : "movement_direction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "movement_direction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "movement_direction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "start_bot",
+					"strict" : false
+				},
+				{
+					"name" : "adc_miso",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
