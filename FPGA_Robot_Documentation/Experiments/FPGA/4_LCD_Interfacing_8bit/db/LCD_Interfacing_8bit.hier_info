@@ -1,0 +1,105 @@
+|LCD_Interfacing_8bit
+clock_in => clock_in.IN2
+reset => reset.IN1
+LCD_DATA[0] <> LCD_DATA[0]
+LCD_DATA[1] <> LCD_DATA[1]
+LCD_DATA[2] <> LCD_DATA[2]
+LCD_DATA[3] <> LCD_DATA[3]
+LCD_DATA[4] <> LCD_DATA[4]
+LCD_DATA[5] <> LCD_DATA[5]
+LCD_DATA[6] <> LCD_DATA[6]
+LCD_DATA[7] <> LCD_DATA[7]
+LCD_EN <= LCD_ADC:u5.LCD_EN
+LCD_ON <= <VCC>
+LCD_RS <= LCD_ADC:u5.LCD_RS
+LCD_RW <= LCD_ADC:u5.LCD_RW
+
+
+|LCD_Interfacing_8bit|Reset_Delay:r0
+iCLK => oRESET~reg0.CLK
+iCLK => Cont[0].CLK
+iCLK => Cont[1].CLK
+iCLK => Cont[2].CLK
+iCLK => Cont[3].CLK
+iCLK => Cont[4].CLK
+iCLK => Cont[5].CLK
+iCLK => Cont[6].CLK
+iCLK => Cont[7].CLK
+iCLK => Cont[8].CLK
+iCLK => Cont[9].CLK
+iCLK => Cont[10].CLK
+iCLK => Cont[11].CLK
+iCLK => Cont[12].CLK
+iCLK => Cont[13].CLK
+iCLK => Cont[14].CLK
+iCLK => Cont[15].CLK
+iCLK => Cont[16].CLK
+iCLK => Cont[17].CLK
+iCLK => Cont[18].CLK
+iCLK => Cont[19].CLK
+oRESET <= oRESET~reg0.DB_MAX_OUTPUT_PORT_TYPE
+iRST_n => oRESET.DATAA
+
+
+|LCD_Interfacing_8bit|LCD_ADC:u5
+iCLK => iCLK.IN1
+iRST_N => iRST_N.IN1
+LCD_DATA[0] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[1] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[2] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[3] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[4] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[5] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[6] <= LCD_Controller:u0.LCD_DATA
+LCD_DATA[7] <= LCD_Controller:u0.LCD_DATA
+LCD_RW <= LCD_Controller:u0.LCD_RW
+LCD_EN <= LCD_Controller:u0.LCD_EN
+LCD_RS <= LCD_Controller:u0.LCD_RS
+
+
+|LCD_Interfacing_8bit|LCD_ADC:u5|LCD_Controller:u0
+iDATA[0] => LCD_DATA[0].DATAIN
+iDATA[1] => LCD_DATA[1].DATAIN
+iDATA[2] => LCD_DATA[2].DATAIN
+iDATA[3] => LCD_DATA[3].DATAIN
+iDATA[4] => LCD_DATA[4].DATAIN
+iDATA[5] => LCD_DATA[5].DATAIN
+iDATA[6] => LCD_DATA[6].DATAIN
+iDATA[7] => LCD_DATA[7].DATAIN
+iRS => LCD_RS.DATAIN
+iStart => preStart.DATAIN
+iStart => Equal0.IN0
+oDone <= oDone~reg0.DB_MAX_OUTPUT_PORT_TYPE
+iCLK => Cont[0].CLK
+iCLK => Cont[1].CLK
+iCLK => Cont[2].CLK
+iCLK => Cont[3].CLK
+iCLK => Cont[4].CLK
+iCLK => mStart.CLK
+iCLK => preStart.CLK
+iCLK => LCD_EN~reg0.CLK
+iCLK => oDone~reg0.CLK
+iCLK => ST~5.DATAIN
+iRST_N => Cont[0].ACLR
+iRST_N => Cont[1].ACLR
+iRST_N => Cont[2].ACLR
+iRST_N => Cont[3].ACLR
+iRST_N => Cont[4].ACLR
+iRST_N => mStart.ACLR
+iRST_N => preStart.ACLR
+iRST_N => LCD_EN~reg0.ACLR
+iRST_N => oDone~reg0.ACLR
+iRST_N => ST~7.DATAIN
+LCD_DATA[0] <= iDATA[0].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[1] <= iDATA[1].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[2] <= iDATA[2].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[3] <= iDATA[3].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[4] <= iDATA[4].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[5] <= iDATA[5].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[6] <= iDATA[6].DB_MAX_OUTPUT_PORT_TYPE
+LCD_DATA[7] <= iDATA[7].DB_MAX_OUTPUT_PORT_TYPE
+LCD_RW <= <GND>
+LCD_EN <= LCD_EN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RS <= iRS.DB_MAX_OUTPUT_PORT_TYPE
+
+

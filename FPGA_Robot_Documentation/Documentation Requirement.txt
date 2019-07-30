@@ -1,0 +1,9 @@
+1 - Projects name and inner files with same and commented with coding standard
+2 - Document of readme for every experiment includes
+		- Pinout of that project pins
+		- Minimum required LUT, LE
+		- Precautions if any to be taken before start or after upload.
+		- Note of enable switch if available.
+		- 
+3 - Document to upload program device via .sof file which store in RAM and procedure to upload in EEPROM via .jic file.
+4 - Document for detail description of every experiment and its working.

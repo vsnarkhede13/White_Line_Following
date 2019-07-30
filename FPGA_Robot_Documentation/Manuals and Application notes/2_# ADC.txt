@@ -1,0 +1,44 @@
+# ADC
+	- PINOUT
+		adc_chip_enable		Output	PIN_A10
+		adc_serial_clk		Output	PIN_B14
+		channel_select[2]	Input	PIN_B9
+		channel_select[1]	Input	PIN_T8
+		channel_select[0]	Input	PIN_M1
+		clock_in			Input	PIN_R8
+		enable_conversion	Input	PIN_J15
+		led_output[11]		Output	PIN_L3
+		led_output[10]		Output	PIN_B1
+		led_output[9]		Output	PIN_F3
+		led_output[8]		Output	PIN_D1
+		led_output[7]		Output	PIN_A11
+		led_output[6]		Output	PIN_B13
+		led_output[5]		Output	PIN_A13
+		led_output[4]		Output	PIN_A15
+		led_output[3]		Output	
+		led_output[2]		Output	
+		led_output[1]		Output	
+		led_output[0]		Output	
+		miso				Input	PIN_A9
+		mosi				Output	PIN_B10
+		output_de2[11]		Output	PIN_T15
+		output_de2[10]		Output	PIN_F13
+		output_de2[9]		Output	PIN_L15
+		output_de2[8]		Output	PIN_K16
+		output_de2[7]		Output	PIN_N11
+		output_de2[6]		Output	PIN_P9
+		output_de2[5]		Output	PIN_R10
+		output_de2[4]		Output	PIN_R11
+		output_de2[3]		Output	PIN_T11
+		output_de2[2]		Output	PIN_T12
+		output_de2[1]		Output	PIN_T13
+		output_de2[0]		Output	PIN_P16
+		reset				Input	PIN_E1
+	- LUT and LE Specifications
+		Total Logic Elements : 39 / 22,320 ( < 1 % )
+		Total pins : 34 / 154 ( 22 % )
+		ALUT : 14 (14)
+		Dedicated Logic Registers : 35 (35)
+	- Enable and Reset
+		Eable ADC using Push-Button Key[0]
+		Reset Push-Button Key[1]

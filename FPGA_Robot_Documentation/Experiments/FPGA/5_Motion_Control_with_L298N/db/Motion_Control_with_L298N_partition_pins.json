@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "motor_left_forward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_left_backward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_right_forward",
+					"strict" : false
+				},
+				{
+					"name" : "motor_right_backward",
+					"strict" : false
+				},
+				{
+					"name" : "robot_direction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "robot_direction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "robot_direction[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

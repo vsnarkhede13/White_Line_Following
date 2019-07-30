@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "adc_chip_enable",
+					"strict" : false
+				},
+				{
+					"name" : "adc_serial_clk",
+					"strict" : false
+				},
+				{
+					"name" : "mosi",
+					"strict" : false
+				},
+				{
+					"name" : "reading[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[8]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[9]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[10]",
+					"strict" : false
+				},
+				{
+					"name" : "reading[11]",
+					"strict" : false
+				},
+				{
+					"name" : "enable_conversion",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock_in",
+					"strict" : false
+				},
+				{
+					"name" : "channel_select[1]",
+					"strict" : false
+				},
+				{
+					"name" : "channel_select[2]",
+					"strict" : false
+				},
+				{
+					"name" : "channel_select[0]",
+					"strict" : false
+				},
+				{
+					"name" : "miso",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

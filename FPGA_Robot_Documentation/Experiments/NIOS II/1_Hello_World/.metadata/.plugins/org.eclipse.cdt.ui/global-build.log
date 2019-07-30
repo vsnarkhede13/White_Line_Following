@@ -1,0 +1,1909 @@
+14:42:42 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:42:50 **** Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:42:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:43:10 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:1:6: error: expected '=', ',', ';', 'asm' or '__attribute__' before '-' token
+   * e-Yantra Summer Internship Programme
+      ^
+In file included from ../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:46:0,
+                 from hello_world_small.c:13:
+c:\intelfpga_lite\18.1\nios2eds\bin\gnu\h-x86_64-mingw32\lib\gcc\nios2-elf\5.3.0\include\stdarg.h:98:9: error: unknown type name '__gnuc_va_list'
+ typedef __gnuc_va_list va_list;
+         ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:75:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+make: *** [obj/default/hello_world_small.o] Error 1
+14:43:11 **** Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:43:25 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:1:6: error: expected '=', ',', ';', 'asm' or '__attribute__' before '-' token
+   * e-Yantra Summer Internship Programme
+      ^
+In file included from ../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:46:0,
+                 from hello_world_small.c:13:
+c:\intelfpga_lite\18.1\nios2eds\bin\gnu\h-x86_64-mingw32\lib\gcc\nios2-elf\5.3.0\include\stdarg.h:98:9: error: unknown type name '__gnuc_va_list'
+ typedef __gnuc_va_list va_list;
+         ^
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:75:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+make: *** [obj/default/hello_world_small.o] Error 1
+14:43:26 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:43:32 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:75:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1480 Bytes program size (code + initialized data).
+Info:                        2612 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:43:36 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:43:46 **** Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:43:48 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:45:07 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1084 Bytes program size (code + initialized data).
+Info:                        3008 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:45:10 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:45:13 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:46:47 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:70:10: warning: implicit declaration of function 'alt_put' [-Wimplicit-function-declaration]
+          alt_put(mat_c[i][j]);
+          ^
+hello_world_small.c:75:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+obj/default/hello_world_small.o: In function `main':
+D:\Tech\e-YSIP\robot_design_using_FPGA\Hello_World\software\proj_hello_world/hello_world_small.c:70: undefined reference to `alt_put'
+collect2.exe: error: ld returned 1 exit status
+make: *** [proj_hello_world.elf] Error 1
+14:46:49 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:46:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+obj/default/hello_world_small.o: In function `main':
+D:\Tech\e-YSIP\robot_design_using_FPGA\Hello_World\software\proj_hello_world/hello_world_small.c:70: undefined reference to `alt_put'
+collect2.exe: error: ld returned 1 exit status
+make: *** [proj_hello_world.elf] Error 1
+14:47:05 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:75:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1448 Bytes program size (code + initialized data).
+Info:                        2644 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:47:08 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:47:14 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:48:09 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:76:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c)
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+hello_world_small.c:77:4: error: expected ';' before 'while'
+    while(1);
+    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+14:48:10 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:48:15 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:76:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c)
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+hello_world_small.c:77:4: error: expected ';' before 'while'
+    while(1);
+    ^
+make: *** [obj/default/hello_world_small.o] Error 1
+14:48:27 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:76:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1472 Bytes program size (code + initialized data).
+Info:                        2620 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:48:30 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:48:38 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:49:46 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:76:15: warning: passing argument 1 of 'alt_printf' makes pointer from integer without a cast [-Wint-conversion]
+    alt_printf(c);
+               ^
+In file included from hello_world_small.c:13:0:
+../proj_hello_world_bsp//HAL/inc/sys/alt_stdio.h:56:6: note: expected 'const char *' but argument is of type 'int'
+ void alt_printf(const char *fmt, ...);
+      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1480 Bytes program size (code + initialized data).
+Info:                        2612 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:49:49 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:49:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:50:31 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:68:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1480 Bytes program size (code + initialized data).
+Info:                        2612 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:50:35 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:50:37 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:52:34 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:70:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:75:7: error: expected ';' before '}' token
+       }
+       ^
+make: *** [obj/default/hello_world_small.o] Error 1
+14:52:35 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:52:42 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:70:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1456 Bytes program size (code + initialized data).
+Info:                        2636 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:52:45 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:52:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:53:44 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:70:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:31:34: warning: variable 'mat_c' set but not used [-Wunused-but-set-variable]
+    int mat_a[3][3], mat_b[3][3], mat_c[3][3];
+                                  ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1440 Bytes program size (code + initialized data).
+Info:                        2652 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:53:47 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:53:56 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:54:57 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:54:58 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:55:01 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:70:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:26: warning: unused variable 'c' [-Wunused-variable]
+    int a = 273, b = 123, c = 0, i = 0, j = 0, k = 0;
+                          ^
+hello_world_small.c:31:34: warning: variable 'mat_c' set but not used [-Wunused-but-set-variable]
+    int mat_a[3][3], mat_b[3][3], mat_c[3][3];
+                                  ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1188 Bytes program size (code + initialized data).
+Info:                        2904 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:55:04 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:55:13 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:55:28 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:70:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:26: warning: unused variable 'c' [-Wunused-variable]
+    int a = 273, b = 123, c = 0, i = 0, j = 0, k = 0;
+                          ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1384 Bytes program size (code + initialized data).
+Info:                        2708 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:55:31 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:55:34 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:56:45 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:72:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1684 Bytes program size (code + initialized data).
+Info:                        2300 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+14:56:49 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:56:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:57:34 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:57:50 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+14:57:51 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+14:57:54 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:11:58 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:11:59 **** Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:12:09 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:13:37 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1820 Bytes program size (code + initialized data).
+Info:                        2164 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:13:40 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:13:42 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:15:04 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1820 Bytes program size (code + initialized data).
+Info:                        2164 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:15:08 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:15:33 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:16:01 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1856 Bytes program size (code + initialized data).
+Info:                        2128 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:16:04 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:16:47 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:87:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1904 Bytes program size (code + initialized data).
+Info:                        2080 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:16:50 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:16:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:17:14 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:22:09 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:86:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1912 Bytes program size (code + initialized data).
+Info:                        2072 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:22:12 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:22:24 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1904 Bytes program size (code + initialized data).
+Info:                        2080 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:22:27 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:22:30 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:25:20 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1904 Bytes program size (code + initialized data).
+Info:                        2080 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:25:24 **** Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:25:26 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:26:55 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1880 Bytes program size (code + initialized data).
+Info:                        2104 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:26:58 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:27:01 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:27:53 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1880 Bytes program size (code + initialized data).
+Info:                        2104 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:27:56 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:27:59 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:28:19 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:33:03 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:86:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:32:22: warning: unused variable 'c' [-Wunused-variable]
+    int a = 0, b = 0, c = 0, i = 0, j = 0, k = 0;
+                      ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1880 Bytes program size (code + initialized data).
+Info:                        2104 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:33:05 **** Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:33:09 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:34:34 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1904 Bytes program size (code + initialized data).
+Info:                        2080 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:34:36 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:34:43 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:36:28 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:37:48 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:38:53 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:39:26 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:40:25 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1924 Bytes program size (code + initialized data).
+Info:                        2060 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:40:27 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:40:30 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:41:10 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:86:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1948 Bytes program size (code + initialized data).
+Info:                        2036 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:41:12 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:41:18 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:43:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:93:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1956 Bytes program size (code + initialized data).
+Info:                        2028 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:43:54 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:43:57 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:45:12 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:93:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1956 Bytes program size (code + initialized data).
+Info:                        2028 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:45:14 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:45:20 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:45:55 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:93:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1956 Bytes program size (code + initialized data).
+Info:                        2028 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:45:57 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:45:59 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:49:19 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:49:20 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:49:23 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:39:6: error: 'a' undeclared (first use in this function)
+      a[i][j] = alt_getchar();
+      ^
+hello_world_small.c:39:6: note: each undeclared identifier is reported only once for each function it appears in
+hello_world_small.c:47:6: error: 'b' undeclared (first use in this function)
+      b[i][j] = alt_getchar();
+      ^
+hello_world_small.c:60:30: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                              ^
+hello_world_small.c:60:33: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                 ^
+hello_world_small.c:60:44: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                            ^
+hello_world_small.c:60:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                               ^
+hello_world_small.c:63:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:64:15: warning: array subscript has type 'char' [-Wchar-subscripts]
+          mat_c[i][j] = sum;
+               ^
+hello_world_small.c:64:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+          mat_c[i][j] = sum;
+                  ^
+hello_world_small.c:65:33: warning: array subscript has type 'char' [-Wchar-subscripts]
+          alt_printf("%x ", mat_c[i][j]);
+                                 ^
+hello_world_small.c:65:36: warning: array subscript has type 'char' [-Wchar-subscripts]
+          alt_printf("%x ", mat_c[i][j]);
+                                    ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+make: *** [obj/default/hello_world_small.o] Error 1
+15:49:44 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:39:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+      mat_a[i][j] = alt_getchar();
+           ^
+hello_world_small.c:39:14: warning: array subscript has type 'char' [-Wchar-subscripts]
+      mat_a[i][j] = alt_getchar();
+              ^
+hello_world_small.c:47:11: warning: array subscript has type 'char' [-Wchar-subscripts]
+      mat_b[i][j] = alt_getchar();
+           ^
+hello_world_small.c:47:14: warning: array subscript has type 'char' [-Wchar-subscripts]
+      mat_b[i][j] = alt_getchar();
+              ^
+hello_world_small.c:60:30: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                              ^
+hello_world_small.c:60:33: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                 ^
+hello_world_small.c:60:44: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                            ^
+hello_world_small.c:60:47: warning: array subscript has type 'char' [-Wchar-subscripts]
+             sum = sum + mat_a[i][k] * mat_b[k][j];
+                                               ^
+hello_world_small.c:63:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:64:15: warning: array subscript has type 'char' [-Wchar-subscripts]
+          mat_c[i][j] = sum;
+               ^
+hello_world_small.c:64:18: warning: array subscript has type 'char' [-Wchar-subscripts]
+          mat_c[i][j] = sum;
+                  ^
+hello_world_small.c:65:33: warning: array subscript has type 'char' [-Wchar-subscripts]
+          alt_printf("%x ", mat_c[i][j]);
+                                 ^
+hello_world_small.c:65:36: warning: array subscript has type 'char' [-Wchar-subscripts]
+          alt_printf("%x ", mat_c[i][j]);
+                                    ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1608 Bytes program size (code + initialized data).
+Info:                        2376 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:49:46 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:50:05 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:51:26 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:51:27 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:51:30 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:79:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1728 Bytes program size (code + initialized data).
+Info:                        2256 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:51:32 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:51:36 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:52:06 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:52:07 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:52:49 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:79:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1728 Bytes program size (code + initialized data).
+Info:                        2256 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:52:51 **** Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:52:53 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:54:23 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:79:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1728 Bytes program size (code + initialized data).
+Info:                        2256 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:54:25 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:54:28 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:54:39 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:55:16 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+15:56:42 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:80:16: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          sum = dec_bin(sum);
+                ^
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1848 Bytes program size (code + initialized data).
+Info:                        2136 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+15:56:44 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+15:56:46 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:00:12 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1840 Bytes program size (code + initialized data).
+Info:                        2144 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:00:14 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:00:19 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:02:52 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1864 Bytes program size (code + initialized data).
+Info:                        2120 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:02:54 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:03:00 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:04:15 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1864 Bytes program size (code + initialized data).
+Info:                        2120 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:04:17 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:04:19 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:06:10 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1880 Bytes program size (code + initialized data).
+Info:                        2104 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:06:12 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:06:20 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:06:36 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:06:37 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:06:42 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:07:46 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:27: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                           ^
+hello_world_small.c:33:17: warning: unused variable 'temp' [-Wunused-variable]
+    int sum = 0, temp = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1892 Bytes program size (code + initialized data).
+Info:                        2092 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:07:48 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:08:04 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:08:15 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:08:51 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:08:59 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:14:14 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1920 Bytes program size (code + initialized data).
+Info:                        2064 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:14:16 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:14:22 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:15:32 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:60:2: error: expected ';' before '}' token
+  }
+  ^
+hello_world_small.c:69:2: error: expected ';' before '}' token
+  }
+  ^
+hello_world_small.c:85:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:88:4: error: expected ';' before '}' token
+    }
+    ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+make: *** [obj/default/hello_world_small.o] Error 1
+16:15:33 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:15:44 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:60:2: error: expected ';' before '}' token
+  }
+  ^
+hello_world_small.c:69:2: error: expected ';' before '}' token
+  }
+  ^
+hello_world_small.c:85:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:88:4: error: expected ';' before '}' token
+    }
+    ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+make: *** [obj/default/hello_world_small.o] Error 1
+16:16:06 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1916 Bytes program size (code + initialized data).
+Info:                        2068 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:16:08 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:16:22 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:16:44 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:85:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1916 Bytes program size (code + initialized data).
+Info:                        2068 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:17:27 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1932 Bytes program size (code + initialized data).
+Info:                        2052 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:17:29 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:17:33 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:18:28 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:88:41: error: 'x' undeclared (first use in this function)
+    alt_printf("\nOutput (18 bits): %x", x);
+                                         ^
+hello_world_small.c:88:41: note: each undeclared identifier is reported only once for each function it appears in
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+make: *** [obj/default/hello_world_small.o] Error 1
+16:18:29 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:18:37 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:88:41: error: 'x' undeclared (first use in this function)
+    alt_printf("\nOutput (18 bits): %x", x);
+                                         ^
+hello_world_small.c:88:41: note: each undeclared identifier is reported only once for each function it appears in
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+make: *** [obj/default/hello_world_small.o] Error 1
+16:18:49 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1932 Bytes program size (code + initialized data).
+Info:                        2052 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:18:51 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:18:59 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:19:53 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:84:23: warning: implicit declaration of function 'dec_bin' [-Wimplicit-function-declaration]
+          c = (c<<2) + dec_bin(sum);
+                       ^
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1924 Bytes program size (code + initialized data).
+Info:                        2060 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:19:54 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:19:58 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:20:20 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:20:41 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:20:42 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:20:44 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:22:32 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../proj_hello_world_bsp//HAL/inc -I../proj_hello_world_bsp/ -I../proj_hello_world_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:33:17: warning: unused variable 'value' [-Wunused-variable]
+    int sum = 0, value = 0;;
+                 ^
+Info: Linking proj_hello_world.elf
+nios2-elf-g++  -T'../proj_hello_world_bsp//linker.x' -msys-crt0='../proj_hello_world_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../proj_hello_world_bsp/  -msmallc  -Wl,-Map=proj_hello_world.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o proj_hello_world.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert proj_hello_world.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name hello_world --quartus_project_dir "D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World" --jdi ../..//output_files/hello_world.jdi --sopcinfo D:/Tech/e-YSIP/robot_design_using_FPGA/Hello_World/software/proj_hello_world_bsp/../../hello_world.sopcinfo
+Info: (proj_hello_world.elf) 1916 Bytes program size (code + initialized data).
+Info:                        2068 Bytes free for stack + heap.
+Info: Creating proj_hello_world.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source proj_hello_world.elf >proj_hello_world.objdump
+[proj_hello_world build complete]
+16:22:34 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:22:36 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:22:59 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:23:00 **** Incremental Build of configuration Nios II for project proj_hello_world_bsp ****
+make all 
+[BSP build complete]
+16:23:25 **** Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]
+16:23:26 **** Incremental Build of configuration Nios II for project proj_hello_world ****
+make all 
+Info: Building ../proj_hello_world_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../proj_hello_world_bsp/
+[BSP build complete]
+[proj_hello_world build complete]

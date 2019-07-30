@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 29 11:03:13 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : matrix_mul
+Top-level Entity Name : matrix_mul
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,511 / 22,320 ( 7 % )
+    Total combinational functions : 1,421 / 22,320 ( 6 % )
+    Dedicated logic registers : 835 / 22,320 ( 4 % )
+Total registers : 835
+Total pins : 1 / 154 ( < 1 % )
+Total virtual pins : 0
+Total memory bits : 272,384 / 608,256 ( 45 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

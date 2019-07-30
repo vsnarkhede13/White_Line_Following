@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at lcd_interfacing_8bit.v(16): object "LCD_DATA" differs only in case from object "lcd_data" in the same scope File: C:/Users/JASUS/Music/eYSIP/Fire Bird V DE0-Nano/Experiments/FPGA/4_LCD_Interfacing_8bit/lcd_interfacing_8bit.v Line: 16

@@ -1,0 +1,25 @@
+# Motion_Control_with_L298N
+	- PINOUT
+		clock_in				Input	PIN_R8
+		motor_left_backward		Output	PIN_B4
+		motor_left_enable		Output	PIN_B5
+		motor_left_forward		Output	PIN_A4
+		motor_right_backward	Output	PIN_B3
+		motor_right_enable		Output	PIN_A2
+		motor_right_forward		Output	PIN_A3
+		reset					Input	PIN_J15
+		robot_direction[2]		Input	PIN_M1
+		robot_direction[1]		Input	PIN_T8
+		robot_direction[0]		Input	PIN_B9
+
+	- LUT and LE Specifications
+		Total Logic Elements : 7 / 22,320 ( < 1 % )
+		Total pins : 11 / 154 ( 7 % )
+		ALUT : 7 (7)
+		Dedicated Logic Registers : 0 (0)
+	- Enable and Reset
+		Reset at Push-Button Key[0]
+		Robot DIrection [0] = DIP_Switch[2]
+		Robot DIrection [1] = DIP_Switch[1]
+		Robot DIrection [2] = DIP_Switch[0]
+		

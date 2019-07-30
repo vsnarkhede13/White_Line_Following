@@ -1,0 +1,117 @@
+--------------------Fire Bird De0-Nano Hardware Manual--------------------
+
+----------------------------------------------------------------------------
+Documentation author
+	Sachitanand Malewar, NEX Robotics Pvt. Ltd.
+	Anant Malewar, NEX Robotics Pvt. Ltd. and M. Tech, IIT Bombay
+Credits (Alphabetically)
+	Karthik K Bhat, ECE, PES Bangalore
+	Lohit Penubaku, IIT Bombay
+	Prof. Kavi Arya, CSE, IIT Bombay
+	Simranjeet Singh, CSE, IIT Bombay
+	Vishal Gupta, IIT Bombay
+	Vishal Narkhede, WCE Sangli
+----------------------------------------------------------------------------
+Important:
+	1. User must go through the Fire Bird  Hardware and Software manuals
+	   before using the robot.
+	2. User must read readme file of experiment before execution.
+----------------------------------------------------------------------------
+							Index
+1.		 Introduction 												7
+2.		 Fire Bird De0-Nano 										8
+3.		 Using Fire Bird Robot 									  	12
+4.		 Pin Functionality										    66
+5.		 Upgrading Robot’s Hardware 								76
+----------------------------------------------------------------------------
+1. Introduction
+Thanks for choosing the Fire Bird mobile robot platform. Fire Bird will give you good
+exposure to the world of robotics ,FPGA System and embedded systems via NIOS Processor. 
+You will be able to create and contribute to complex applications that run on this platform,
+helping you acquire expertise as you spend more time with them.
+
+Safety precautions:
+	• Robot’s electronics is static sensitive. Use robot in static free environment.
+	• Read the assembling and operating instructions before working with the robot.
+	• If robot’s battery low then immediately charge the batteries.
+	• To prevent fire hazard, do not expose the equipment to rain or moisture.
+	• Refrain from dismantling the unit or any of its accessories once robot is assembled.
+	• Charge the LI-ion battery only with the charger provided with the robot.
+	• Never allow LI-ion battery to deep discharge.
+	• Mount all the components with correct polarity.
+	• Keep wheels away from long hair or fur.
+	• Keep the robot away from the wet areas. Contact with water will damage the robot.
+	• To avoid risks of fall, keep your robot in a stable position.
+	• Do not attach any connectors while robot is powered ON.
+	• Never leave the robot powered ON when it is not in use.
+	• Disconnect the battery charger after charging the robot.
+
+Inappropriate Operation:
+Inappropriate operation can damage your robot. Inappropriate operation includes, but is not
+limited to:
+	• Dropping the robot, running it off an edge, or otherwise operating it in an irresponsible
+	manner.
+	• Interfacing new hardware without considering compatibility
+	• Overloading the robot above its payload capacity.
+	• Exposing the robot to wet environments.
+	• Continuing to run the robot after hair, yarn, string, or any other item has become
+	entangled in the robot’s axles or wheels.
+	• All other forms of inappropriate operation.
+	• Using robot in areas prone to static electricity.
+	• Read carefully paragraphs marked with caution symbol.
+----------------------------------------------------------------------------
+2. Fire Bird De0-Nano
+	2.1 Photos (Top View, Bottom View, Inner_Layer)
+	2.2 Fire Bird DE0-Nano Block Diagram
+	2.3 Fire Bird DE0-Nano Technical Specifications
+		Controller : Cyclone IV E FPGA or NIOS II are master controller. (Anyone can be used)
+		Sensors : 
+			Three White line sensor (extendable to 7)
+			Two position encoders (extendable to four)
+		Indicators :
+			2 x 16 Characters LCD
+			Indicator LEDs
+		Control:
+			Autonomous Control (Wireless control with addition of external module)
+		Power:
+			11.1V, 2200mAh Li-ion battery pack and external Auxiliary power from
+			battery charger.
+		Locomotion:
+			Two DC geared motors in differential drive configuration and caster wheel at front and back as support
+			• Wheel Diameter: 51mm
+			• Position encoder: 540 pulses per revolution
+----------------------------------------------------------------------------
+3. Using Fire Bird Robot
+In this chapter various components of the robot and their principal of operations are explained 
+in detail. It is very important that user go through chapter before starting to use robot.
+
+Fire Bird robot has 6 important modules:
+1. Power management
+2. Sensing
+3. Actuation (locomotion)
+4. Other peripherals
+5. Communication
+6. Intelligence (microcontroller)
+3.1	Connections
+	Fire Bird Bottom View with naming
+	Fire Bird top View with naming
+	Fire Bird inner View with naming
+3.2 Powering up Fire Bird 
+	Fire Bird V has onboard rechargeable 11.1V, 2.2Ah Li-ion battery which can power the
+	robot. In case experiments are to be performed for an extended period robot can also be powered 
+	by external power supply.
+	- Battery Connection photos(3.2.1 - Power Switch, 3.2.2 - Position of power switch, 3.2.3 - External Supply and Battery supply)
+	Figure 3.1.1 shows power switch which is required for battery as well as external power supply. Fully charged Li-ion
+	batteries will get completely discharged with in a week. You need to charge the robot batteries before using the robot. 
+	Robot is loaded with the program to display line sensor value on 16*2 LCD Display.
+	For running the robot on battery power or external power, refer to the section 3.4 and 3.5.
+3.3 Power management system on the Fire Bird
+	Fire Bird is powered by 11.1 V, 2.2Ah rechargeable Li-ion battery pack. When it is fully charged,
+	battery pack gives 12.84 V. When it is fully discharged, voltage drops to about 10.6V. To avoid
+	any damage to the batteries, only use charger provided with the robot.
+3.4 Powering the robot on battery power
+	To turn on the robot on the battery power, make sure that battery is connected to the robot and
+	move the power switch towards forward direction as shown in 3.2.1
+3.5 Powering the robot on external power
+	To turn on the robot on the external power, make sure that charger is connected to the robot and
+	move the power switch towards forward direction as shown in 3.2.1

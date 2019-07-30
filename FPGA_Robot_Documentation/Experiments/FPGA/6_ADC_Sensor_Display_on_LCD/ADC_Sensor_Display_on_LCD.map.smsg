@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at adc_sensor_display_on_lcd.v(22): object "LCD_DATA" differs only in case from object "lcd_data" in the same scope File: C:/Users/JASUS/Music/eYSIP/Fire Bird V DE0-Nano/Experiments/FPGA/6_ADC_Sensor_Display_on_LCD/adc_sensor_display_on_lcd.v Line: 22
+Warning (10268): Verilog HDL information at lcd_adc.sv(73): always construct contains both blocking and non-blocking assignments File: C:/Users/JASUS/Music/eYSIP/Fire Bird V DE0-Nano/Experiments/FPGA/6_ADC_Sensor_Display_on_LCD/lcd_adc.sv Line: 73

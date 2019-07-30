@@ -1,0 +1,25 @@
+# LCD_Interfacing_8bit
+	- PINOUT
+		LCD_DATA[7]	Bidir	PIN_D14
+		LCD_DATA[6]	Bidir	PIN_D15
+		LCD_DATA[5]	Bidir	PIN_D16
+		LCD_DATA[4]	Bidir	PIN_C15
+		LCD_DATA[3]	Bidir	PIN_C16
+		LCD_DATA[2]	Bidir	PIN_C14
+		LCD_DATA[1]	Bidir	PIN_B16
+		LCD_DATA[0]	Bidir	PIN_A14
+		LCD_EN		Output	PIN_T13
+		LCD_ON		Output	
+		LCD_RS		Output	PIN_F13
+		LCD_RW		Output	PIN_T15
+		clock_in	Input	PIN_R8
+		reset		Input	PIN_J15
+
+	- LUT and LE Specifications
+		Total Logic Elements : 115 / 22,320 ( < 1 % )
+		Total pins : 14 / 154 ( 9 % )
+		ALUT : 113 (0)
+		Dedicated Logic Registers : 72 (0)
+	- Enable and Reset
+		Reset at Push-Button Key[0]
+		

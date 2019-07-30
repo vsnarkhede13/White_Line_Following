@@ -1,0 +1,29 @@
+# ADC_Sensor_Display_on_LCD
+	- PINOUT
+		LCD_DATA[7]			Bidir	PIN_D14
+		LCD_DATA[6]			Bidir	PIN_D15
+		LCD_DATA[5]			Bidir	PIN_D16
+		LCD_DATA[4]			Bidir	PIN_C15
+		LCD_DATA[3]			Bidir	PIN_C16
+		LCD_DATA[2]			Bidir	PIN_C14
+		LCD_DATA[1]			Bidir	PIN_B16
+		LCD_DATA[0]			Bidir	PIN_A14
+		LCD_EN				Output	PIN_T13
+		LCD_ON				Output	
+		LCD_RS				Output	PIN_F13
+		LCD_RW				Output	PIN_T15
+		adc_chip_enable		Output	PIN_A10
+		adc_serial_clk		Output	PIN_B14
+		clock_in			Input	PIN_R8
+		enable_conversion	Input	PIN_E1
+		miso				Input	PIN_A9
+		mosi				Output	PIN_B10
+		reset				Input	PIN_J15
+	- LUT and LE Specifications
+		Total Logic Elements : 1,727 / 22,320 ( 8 % )
+		Total pins : 19 / 154 ( 12 % )
+		ALUT : 1713 (32)
+		Dedicated Logic Registers : 133 (61)
+	- Enable and Reset
+		Eable ADC using Push-Button Key[1]
+		Reset Push-Button Key[0]

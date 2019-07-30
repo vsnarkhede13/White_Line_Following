@@ -1,0 +1,9 @@
+# Matrix_Multiplication
+	- PINOUT
+		To check output get result on UART or LCD or LEDs (if available) or test it using testbench
+	- LUT and LE Specifications
+		Total Logic Elements : 36 / 22,320 ( < 1 % )
+		Total pins : 37 / 154 ( 24 % )
+		ALUT : 36 (36)
+		Dedicated Logic Registers : 18 (18)
+	- No enable and reset pin

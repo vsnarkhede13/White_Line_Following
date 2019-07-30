@@ -1,0 +1,112 @@
+24/05/2019 - As a simple task, implemented a Simple ALU on Verilog.
+
+25/05/2019 - Revising Verilog:
+		1. Went through few videos from NPTEL
+		2. Went through basics from Sadiku Textbook
+
+27/05/2019 - Went throught the DE0-Nano, NIOS Processor's datasheet.
+
+Task 1:
+>> 3x3 single/double bit elements Matrix multiplication on FPGA and NIOS II 
+
+28/05/2019 - Learnt the NIOS 2 Software usage.
+		>> Creating modules using Platform developer on Quartus.
+		>> Hello World program using the JTAG UART
+
+	   - Finished the multiplication of array on Verilog
+
+29/05/2019 - Implemented the Hello World program on DE0-Nano Board
+
+	   - Finished and implemented the matrix multiplication on DE0-Nano Board
+
+Task 2: 
+>> Interfacing the ADC with the board on Verilog.
+>> Interfacing the 16x2 Display with the board on Verilog.
+
+30/05/2019 - Looked into the ADC128S022 datasheet and the interfacing
+	   - Started coding the ADC Interface
+	   - Looked at the LCD Datasheet and ways to use it.
+	   - Read through the DE2-i 150 board datasheet.
+
+31/05/2019 - Tried to run the ADC Interface on the DE0-Nano Hardware.
+	     Did not work. Errors to be fixed.
+	   - Started the LCD Interface code on Verilog
+
+01/06/2019 - Created the testbench file to test the ADC Interface verilog code.
+	   - Finished the testbench simulation and fixed the errors.
+	   - Finished with LCD Code
+
+03/06/2019 - LCD Code debugging.
+	   - ADC Code for 3 channels
+	   - Understanding the Motor encoder and its usage.
+
+04/06/2019 - LCD-ADC Interface code combined (Modularity)
+	   - Simulated ADC Code for 3 channels.
+
+05/06/2019 - Interfacing L298N with FPGA
+	   - Finish the PWM Code for motors
+	   - Testing LCD-ADC interface on hardware.
+		Setback 1: ADC not present on DE2-i 150 Board.
+		Setback 2: LCD not initialized properly with DE0-Nano board. Data was not received on LCD.
+
+06/06/2019 - An error in the ADC interface for obtaining values from 3 channels was identified and fixed.
+	   - Tried to connect the LCD on the DE0-Nano board. Didn't work.
+
+07/06/2019 - Connected the ADC of DE0-Nano board to DE2-Nano board. Wasn't working. A bug in the code.
+	   - Connected the 12 bit output of one channel from ADC on DE0-Nano board to DE2 board. Was working
+
+08/06/2019 - L298N Motor Driver interface
+	   - Inclusion of Motor Encoder 
+
+10/06/2019 - PWM Generation for Motors
+	   - Worked on the LCD Display. 
+	   - Changed the LCD Data lines to 4 from 8. Re-wrote the Code.
+
+11/06/2019 - LCD interface working with DE0-Nano and DE2 Board.
+	   - Need to find the error with the previous methodology (8-data path interfacing)
+	   - Testing the ADC-LCD for 3 channels. 
+
+12/06/2019 - LCD successfully working with 4-bit dataline. 
+	   - Found the root-cause for 8-bit dataline issue. System reserved pins were being used.
+
+13/06/2019 - Working on ADC-LCD interfacing.
+		LCD Data not changing dynamically
+
+14/06/2019 - No work done. Progress presentation and Talk.
+
+15/06/2019 - LCD-ADC Interfacing done. Values changing Dynamically.
+		There is still flickering because of updation. Need to refine the code
+	   - Started working with the motor interface
+
+17/06/2019 - Modularized the Code.
+	   - Revised LCD updation code - Flickering issue resolved.
+	   - Found the system reserved pins on the DE0-Nano board
+
+18/06/2019 - Finished with the hardware testing of motors.
+		Direction changes, PWM variation working as expected.
+	   - Looking into performance evaluation criteria for comparison betweek Altera FPGA and NIOS processor.
+
+19/06/2019 - Started with finalizing robot chasis and fixed positions of all components.
+                      - Line follower code and encoder to follow straight path is ready and is under test
+
+20/06/2019 - Planned the layout of the robot hardware, fixed the required components
+	   - Soldered the circuits on a PCB and did the required connections. 
+
+21/06/2019 - Verifying the circuit and wiring
+	   - Problem with the line sensor interfacing. Jumper cables usually loose.
+
+22/06/2019 - Testing the robot block by block.
+	   - Motor Encoder testing with values displayed on LCD.
+
+24/06/2019 - Complete debugging and testing of Line following algorithm. Working perfectly.
+	   - Bug with the motor encoder based movement. Debugging yet to be done.
+
+25/06/2019 - Changed the code support from Nex robotics white line sensor (WLS) interfacing to Smartelex 6 WLS.
+	   - Tested the new WLS using the on-board LEDs.
+	   - Started documentation. Hardware Manual partially completed.
+
+26/06/2019 - The new WLS output is 0-5V. Cannot be used on DE0-Nano board's ADC since it supports only 0-3.3V signal.
+	   - Changed the setup back to Nex-robotics WLS
+	   - Reference examples for the FPGA Robot kit - including commenting and readme.
+
+27/06/2019 - 

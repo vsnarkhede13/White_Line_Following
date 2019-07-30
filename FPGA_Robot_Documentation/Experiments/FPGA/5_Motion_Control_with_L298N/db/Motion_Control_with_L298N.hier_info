@@ -1,0 +1,26 @@
+|Motion_Control_with_L298N
+clock_in => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+robot_direction[0] => Mux0.IN10
+robot_direction[0] => Mux1.IN10
+robot_direction[0] => Mux2.IN10
+robot_direction[0] => Mux3.IN10
+robot_direction[0] => Mux4.IN10
+robot_direction[1] => Mux0.IN9
+robot_direction[1] => Mux1.IN9
+robot_direction[1] => Mux2.IN9
+robot_direction[1] => Mux3.IN9
+robot_direction[1] => Mux4.IN9
+robot_direction[2] => Mux0.IN8
+robot_direction[2] => Mux1.IN8
+robot_direction[2] => Mux2.IN8
+robot_direction[2] => Mux3.IN8
+robot_direction[2] => Mux4.IN8
+motor_left_enable <= <GND>
+motor_right_enable <= <GND>
+motor_left_forward <= motor_left_forward$latch.DB_MAX_OUTPUT_PORT_TYPE
+motor_left_backward <= motor_left_backward$latch.DB_MAX_OUTPUT_PORT_TYPE
+motor_right_forward <= motor_right_forward$latch.DB_MAX_OUTPUT_PORT_TYPE
+motor_right_backward <= motor_right_backward$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

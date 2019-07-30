@@ -1,0 +1,19 @@
+# LCD_Interfacing_4bit
+	- PINOUT
+		clk		Input	PIN_R8
+		lcd_4	Output	PIN_N11
+		lcd_5	Output	PIN_P9
+		lcd_6	Output	PIN_R10
+		lcd_7	Output	PIN_R11
+		lcd_e	Output	PIN_K16
+		lcd_rs	Output	PIN_P16
+		lcd_rw	Output	PIN_L15
+
+	- LUT and LE Specifications
+		Total Logic Elements : 56 / 22,320 ( < 1 % )
+		Total pins : 8 / 154 ( 5 % )
+		ALUT : 43 (43)
+		Dedicated Logic Registers : 47 (47)
+	- No Enable and Reset
+
+	

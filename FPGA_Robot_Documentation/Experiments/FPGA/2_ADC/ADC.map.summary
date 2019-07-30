@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 27 15:49:10 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ADC
+Top-level Entity Name : ADC
+Family : Cyclone IV E
+Total logic elements : 39
+    Total combinational functions : 14
+    Dedicated logic registers : 35
+Total registers : 35
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
